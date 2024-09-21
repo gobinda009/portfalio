@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Base styling */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #0a0a0a;
+  height: 70px;
+  position: sticky;
+  width: 80%; /* Take 80% of viewport width */
+  margin-top: 40px;
+  left: 50%; /* Center the navbar horizontally */
+  transform: translateX(-12%); /* Adjust horizontal position */
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 12px 15px, rgba(255, 255, 255, 0.12) 0px -12px 20px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+}
+
+/* Centering the links */
+.navbarContainer {
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  width: 100%; /* Full width of the navbar */
+}
+
+.navbarLinks {
+  list-style: none;
+  display: flex;
+  gap: 60px; /* Space between links */
+  margin: 0;
+  padding: 0;
+}
+
+.navbarLinks li {
+  display: flex;
+  align-items: center;
+}
+
+.navbarLinks li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 22px; /* Larger font size */
+  transition: color 0.3s ease;
+}
+
+.navbarLinks li a:hover {
+  color: #ff9800;
+}
+
+/* Font Awesome icon styling */
+.navbarLinks li a svg {
+  font-size: 24px; /* Adjust size as needed */
+  margin-left: 15px; /* Add spacing between links and icons */
+  transition: color 0.3s ease;
+  color: #ffffff;
+}
+
+.navbarLinks li a:hover svg {
+  color: #ff9800; /* Change color on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .navbarLinks {
+    display: none; /* Hide the links on small screens */
+  }
+}
