@@ -6,6 +6,7 @@ export default function Home() {
   return (
     <div >
       <main>
+        <h2>Under development</h2>
       </main>
     </div>
   );

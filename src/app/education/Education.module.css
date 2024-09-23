@@ -1,0 +1,86 @@
+.education {
+  padding: 60px 20px;
+  background-color: #0a0a0a; /* Darker background for the section */
+}
+
+.educationTitle {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #ffffff; /* White text */
+  margin-bottom: 40px;
+  animation: fadeIn 1s ease-in-out;
+}
+.educationCGPA {
+  font-size: 1rem;
+  color: #cccccc; /* Light gray for better readability */
+  margin-top: 5px;
+}
+.educationContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.educationCard {
+  background-color: #2a2a2a; /* Darker card background */
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1); /* Light shadow for contrast */
+  padding: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  opacity: 0; /* Set initial opacity */
+  transform: translateY(20px); /* Start from below */
+  animation: slideIn 0.5s forwards; /* Keep animation here */
+  position: relative;
+}
+
+.educationCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.2); /* Lighter shadow on hover */
+}
+
+.educationDegree {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff; /* White text */
+}
+
+.educationInstitution {
+  font-size: 1.2rem;
+  color: #cccccc; /* Light gray for contrast */
+}
+
+.educationDuration {
+  font-size: 1rem;
+  color: #aaaaaa; /* Slightly lighter gray */
+  margin-top: 10px;
+}
+
+.educationDescription {
+  font-size: 1rem;
+  color: #eeeeee; /* Light gray for better readability */
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

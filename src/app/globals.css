@@ -11,4 +11,11 @@ body {
   background: #0a0a0a;
 
 }
+.layout-container {
+  padding: 20px; /* Adjust as needed */
+  max-width: 1200px; /* Limit the width of your content */
+  margin: 0 auto; /* Center the container */
+  position: relative; /* Useful for positioning elements inside */
+}
+
 
